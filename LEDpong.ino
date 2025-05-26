@@ -1,21 +1,3 @@
-/*
-  LED Pong!
-
-  Play the classic game Pong with an 64x32 RGB LED Matrix, controlled over WiFi by Blynk app. Reddit post for this project: https://www.reddit.com/r/arduino/comments/8kvg5o/led_pong/
-
-  For hardware connection, check out the YouTube channel and Github of Brian Lough, aka. witnessmenow on Github, Reddit, Twitter and YouTube. Particularly this video: https://www.youtube.com/watch?v=YvU_ZfF7vs4
-
-  For Blynk, create an account and a project. You will then need to add two sliders to control each racket. Set one slider to V13 pin and the other to V14. Value range should be set to "from 25 to 1". If you change the racket length in the code below, value range needs to change accordingly as well (but changing the racket length will cause the game to run haphazardly, as explained below). "Send values on release only" option must be off.
-
-  Next, add two "value display" OR "labeled value" boxes for score display. The latter can be formatted to appear on the center but costs more Blynk energy (each user gets 2000 free energy, and this entire pong project costs 800 or 1200 energy, depending on your box choices). The score box belonging to the slider that controls V13 racket must be set to V15 pin, and the other to V16 pin. Label field must be "/pin/" without the quotation marks. Refresh interval must be push.
-
-  Ready to run the display and the app. Upload the sketch, run the Blynk project (as of now, done via a triangle button on top right), and when the game begins, you should be able to control the rackets.
-
-  Enjoy!
-
-  P.S. As you'll no doubt surmise from my code, I'm a noob. Let me know if you have improvements, suggestions or advice (Github handle: uygarpolat). Thank you.
-*/
-
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 #define BLYNK_PRINT Serial
